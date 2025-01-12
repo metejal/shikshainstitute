@@ -1,0 +1,100 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 15px 0;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+.dashboard-container {
+    margin: 10px auto;
+    max-width: 1800px;
+    text-align: center;
+    
+    /*
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    */
+}
+/* Info Section */
+.info-section {
+    margin-bottom: 30px;
+}
+
+.info-section h2 {
+    font-size: 1.8rem;
+    color: #e9e6f5;
+}
+
+.info-section p {
+    font-size: 1.2rem;
+}
+
+/* Dashboard Grid */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    padding: 2px;
+    background-color: #374754;
+    color: #3050dd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background-color: #d7d5db;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.action-link {
+    text-decoration: none;
+    color: #010101;
+    font-weight: bold;
+}
+
+.logout-card {
+    background-color: #00CED1; /* Light blue */
+    color: #4B0082; /* Indigo text color */
+    font-weight: bold;
+    padding: 30px; /* Increased padding for better spacing */
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s;
+    
+}
+
+.logout-link {
+   text-decoration: none;
+    color: #5100ff;
+    font-weight: bold;
+}
+
+/* Logout Hover Effect */
+.logout-link:hover {
+    color: white;
+}
