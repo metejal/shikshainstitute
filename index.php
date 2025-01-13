@@ -11,10 +11,10 @@
         <h1>Shiksha Computer Classes</h1>
         <nav>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li><a href="login.php">Login</a></li>
             </ul>
         </nav>
     </header>
