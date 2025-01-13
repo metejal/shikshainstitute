@@ -54,6 +54,7 @@ $conn->close();
                 <input type="password" name="password" placeholder="Password" required>
                 <button type="submit">Login</button>
             </form>
+            <p>if new user</p>
             <a href="register.php">Register Here</a>
         </div>
     </div>
