@@ -1,4 +1,5 @@
 <?php
+session_start(); // Start the session
 include 'db_config.php';
 
 $message = '';
@@ -18,6 +19,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($result->num_rows === 1) {
             $user = $result->fetch_assoc();
             if (password_verify($password, $user['password'])) {
+                // Set session variable and redirect
+                $_SESSION['username'] = $user['username'];
                 header('Location: dashboard.php');
                 exit;
             } else {
@@ -59,4 +62,4 @@ $conn->close();
         </div>
     </div>
 </body>
-</html>
+</html> 

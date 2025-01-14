@@ -1,3 +1,13 @@
+<?php
+session_start(); // Start the session
+
+// Redirect to login if the user is not logged in
+if (!isset($_SESSION['username'])) {
+    header('Location: login.php');
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +25,7 @@
     <!-- Main Content -->
     <div class="dashboard-container">
         <div class="info-section">
-            
+            <p>Welcome, <strong id="username"><?php echo htmlspecialchars($_SESSION['username']); ?></strong></p>
             <p><h2>Explore a variety of courses to enhance your skills and knowledge.</h2></p>
         </div>
         
